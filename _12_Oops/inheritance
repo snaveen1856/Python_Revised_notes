@@ -1,0 +1,126 @@
+Data
+
+
+    Parent
+	
+    Child   --- Behavior     --- methods
+				Own Behavior --- methods
+				
+				
+				Super class    Parent class  Base class
+				Sub   class    Child  class  Derived class
+				
+	
+	
+	
+	
+         				ANIMAL 
+			WILD A               DOMESTIC A
+		LION TIGER 		         CAT     DOG	
+
+
+
+
+
+
+
+Approach 1 : Wrong   : Multiple methods we have to keep on add in class Animal. 
+                       Because of this,we are forcing all objects to access all methods of Animal. 
+class Animal:
+
+	def __init__(self,...):
+		pass
+		
+	def running(self):
+		pass
+		
+	def eating(self):
+		pass
+		
+	def hunting(self):
+		pass
+		
+cheetah = Animal()
+monkey  = Animal()
+cat     = Animal()
+tiger   = Animal()
+dog     = Animal()
+
+Approach 2 : Wrong    :  Method duplication is happening in all classes.
+
+Dog          Tiger         Cat 
+  m1()          m3()         m5()
+  m2()          m4()         m6()
+  eating()   eating()     eating()
+  
+
+Approach 3 : Inheritance : Correct Approach
+----------------------------------------------
+	Dog      Tiger
+	 m1()      m3()
+	 eating()  eating()
+
+Change to ====>
+		  Animal
+			eating()
+	- Dog      - Tiger    ..................
+	 m1()      m3()
+
+d1 = Dog()
+d1.m1()
+d1.eating()
+
+
+a1 = Animal()
+a1.eating()
+a1.m1()  --- Wrong 
+a1.m2()  --- Wrong 
+
+
+
+
+class Animal(object):
+
+
+
+navn = Employee()
+
+Employee.__dict_()
+setattr()
+hasattr()
+getattr()
+delattr()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+

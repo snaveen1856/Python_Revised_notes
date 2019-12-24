@@ -1,0 +1,20 @@
+1. check given word is palindrome or not?
+2. print even and odd numbers?
+3. print prime numbers?
+4. factorial of given number?
+5. convert list/tuple/set to list/tuple/set?
+6. find cube/square of a number?
+7. table of the given number?
+8.  Write a Python function to find the Max of three numbers?
+9. fibonacci series?
+10. Write a Python function to sum all the numbers in a list
+11. Write a Python function to multiply all the numbers in a list.
+12. Write a Python program to reverse a string.
+13. Write a Python function to check whether a number is in a given range.
+14. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+15. Write a Python function that takes a list and returns a new list with unique elements of the first list.
+16. Write a Python program to print the even numbers from a given list.
+17. Write a Python function that print given Pascal's triangle
+18. function to display group of strings.
+19.Write a Python function to check whether a string is a pangram or not
+20. write program to match the item in two dictionaries.
