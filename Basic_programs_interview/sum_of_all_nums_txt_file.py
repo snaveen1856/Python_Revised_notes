@@ -11,7 +11,7 @@ with open(file_name, 'r') as f:
 new_list = []
 with open(file_name, 'r') as fr:
     line_data = fr.readline()
-    # print('lines in file:', line_data)
+    print('lines in file:', line_data)
     for row in line_data:
         row = row.rstrip('\n')
         list_words = row.split(' ')

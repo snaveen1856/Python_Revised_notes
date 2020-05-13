@@ -1,20 +1,21 @@
-# create a file with employee
-fname = input('Enter file name: ')
+""" create a file with employee and insert record into file system
+"""
+F_NAME = input('Enter file name: ')
 try:
-    f = open(fname, 'w')
+    FILE = open(F_NAME, 'w')
     while True:
-        empid = input('Enter Employee id: ')
-        name = input('Enter Employee name: ')
-        job = input('Enter job: ')
-        salary = int(input('Enter salary: '))
-        rec = empid + ',' + name + ',' + job + ',' + str(salary) + '\n'
-        f.write(rec)
-        opt = input('Write another record: [y/n]:')
-        if opt in ('n', 'N'):
+        EMP_ID = input('Enter Employee id: ')
+        NAME = input('Enter Employee name: ')
+        JOB = input('Enter job: ')
+        SALARY = int(input('Enter salary: '))
+        REC = EMP_ID + ',' + NAME + ',' + JOB + ',' + str(SALARY) + '\n'
+        FILE.write(REC)
+        OPTION = input('Write another record: [y/n]:')
+        if OPTION in ('n', 'N'):
             break
 
-except Exception as e:
-    print(e)
+except Exception as exe:
+    print(exe)
 finally:
-    if f:
-        f.close()
+    if FILE:
+        FILE.close()

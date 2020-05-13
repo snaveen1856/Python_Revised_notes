@@ -8,3 +8,4 @@ def pascal_triangle(n):
 
 
 pascal_triangle(6)
+print(pascal_triangle(6))

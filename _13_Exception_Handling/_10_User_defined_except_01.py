@@ -22,7 +22,7 @@ class Int_list(list):
 
     def extend(self, n):
         k = []
-        if type(n) is list: # if isinstance(n, list):
+        if type(n) is list:  # if isinstance(n, list):
             for i in n:
                 if isinstance(i, int):
                     k.append(i)

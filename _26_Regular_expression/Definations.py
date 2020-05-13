@@ -40,7 +40,7 @@ Metacharacters are characters with a special meaning:
 Character	Description	Example	Try it
 ---------------------------------------
 []	A set of characters	"[a-m]"
-\	Signals a special sequence (can also be used to escape special characters) "\d"
+'\'	Signals a special sequence (can also be used to escape special characters)
 .	Any character (except newline character)	"he..o"
 ^	Starts with	"^hello"
 $	Ends with	"world$"
@@ -90,7 +90,7 @@ The findall() Function:
 The findall() function returns a list containing all matches.
 
 Example:
----------
+--------
 Print a list of all matches:
 
 import re
@@ -151,7 +151,7 @@ import re
 str = "The rain in Spain"
 x = re.split("\s", str)
 print(x)
-You can control the number of occurrences by specifying the maxsplit parameter:
+You can control the number of occurrences by specifying the max split parameter:
 
 Example
 -------

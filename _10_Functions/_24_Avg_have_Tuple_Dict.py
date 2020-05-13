@@ -1,5 +1,5 @@
 # variable positional argument function with necessary argument,tuple and dictionary
-def add(x, y, *n, **k):  # Here it will create tuple for *n and dictionary for **orgs
+def add(x, y, *n, **k):  # Here it will create tuple for *n and dictionary for **kwargs
     total = x + y
     if n:
         for i in n:

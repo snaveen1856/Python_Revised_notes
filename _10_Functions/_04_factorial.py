@@ -10,4 +10,15 @@ def factorial(n):
 
 s = int(input('Enter a number: '))
 k = factorial(s)
-print(k)
+print("Factorial Using the recurring:", k)
+
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+
+
+p = factorial(6)
+print(f'Factorial of {6}:', p)

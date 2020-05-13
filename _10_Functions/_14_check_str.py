@@ -7,12 +7,12 @@ def check_str(s):
 
 
 def check_U_L(s):
-    str = list(s)
+    str_1 = list(s)
     upper_l = 0
     lower_l = 0
     ul = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-    ll = list('abcdefghijklmnopqrstuvwxyz')
-    for i in str:
+    # ll = list('abcdefghijklmnopqrstuvwxyz')
+    for i in str_1:
         if i in ul:
             upper_l += 1
         else:
@@ -20,6 +20,6 @@ def check_U_L(s):
     return upper_l, lower_l
 
 
-str = input('Enter a text: ')
-check_str(str)
-print('upper letter,lower letter:', check_U_L(str))
+str_ = input('Enter a text: ')
+check_str(str_)
+print('upper letter,lower letter:', check_U_L(str_))

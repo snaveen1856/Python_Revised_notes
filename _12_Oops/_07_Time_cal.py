@@ -39,5 +39,5 @@ class Time:
 t = Time.create_Time(19, 56, 18)
 print(t)
 print(t.total_seconds)
-t.total_seconds = 74560
+t.total_seconds = 74578
 print(t)

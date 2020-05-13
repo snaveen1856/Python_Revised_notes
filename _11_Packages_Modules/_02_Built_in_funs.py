@@ -53,6 +53,6 @@ def current_time():
 # b=int(input('Enter b value: '))
 # print(f"{a}x{2}^{b}= ",exp(a, b))
 # print('\n'f"Factorial of {a}!= ",fact(a))
-# print('Complex Rectangular formate: ',comp_rect(a,b))
+# print('Complex Rectangular format: ',comp_rect(a,b))
 z = complex(input('Enter a complex number:'))
 print('Complex of polar:', comp_polar(z))

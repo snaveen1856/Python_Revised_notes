@@ -1,5 +1,5 @@
 class Account:
-    bank = 'SBI'
+    __bank = 'SBI'
     branch = 'Bengalure'
     acc_count = 0
 

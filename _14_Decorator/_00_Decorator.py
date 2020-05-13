@@ -33,7 +33,7 @@ Part6 : Nested function(here wrapper()) will be executed and returns the result 
 Part7 : PI will pass the same result to our code  
 
 What is decorator
-Purpose of decorator.Advatanges Disadvantages
+Purpose of decorator.Advantages   Disadvantages
 Python Decorators 
 Django Decorators
 Did you write any customized decorator
@@ -66,7 +66,7 @@ sub(1, 3)
 '''
 Step 1 : First class function : my_decorator function will be called and executed by receiving our method
                                 name as argument.  
-Step 2 : Nested function      : In my_decorator function,nested will be there which will receive our method 
+Step 2 : Nested function      : In my_decorator function,nested function will be there which will receive our method 
                                 arguments.
 Step 3:  Returning function  : wrapper function(i.e. nested function)  name will be returned
 

@@ -3,7 +3,9 @@ def rev_str(s):
     for i in s:
         l.append(i)
     # print(l)
+    new_l = [char for char in s]
     print('Reverse the string using the method .reverse(): ', l.reverse())
+    print('Reverse the string using the method .reverse(): ', new_l.reverse())
 
 
 def rev_s(str1):
@@ -20,3 +22,5 @@ rev = string[::-1]
 print('Reverse the string using slice operator: ', rev)
 s = rev_s(string)
 print('Reverse the string using function: ', s)
+print('---------------------------------------------')
+rev_str(string)

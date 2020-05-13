@@ -5,10 +5,10 @@ print("---------------3. RETURNING NESTED FUNCTION NAME------------------")
 
 def parent(num):
     def first_child(message):
-        return "Printing from the first_child() function.", message
+        return "Printing from the first_child() function:", message
 
     def second_child():
-        return "Printing from the second_child() function."
+        return "Printing from the second_child() function:"
 
     try:
         assert num == 10
@@ -23,9 +23,9 @@ def parent(num):
 xyz = parent(10)
 
 print("******************************************")
-print("Returning function name fc", xyz)
-print("Executing function foo  ", xyz("HELLO WORLD"))
-print("*************")
+print("Returning function name :", xyz)
+print("Executing function parent:", xyz("HELLO WORLD"))
+print("********************************************")
 
 abc = parent(11)
 print("Returning function name bar ", abc)

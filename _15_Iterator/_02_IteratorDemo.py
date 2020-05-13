@@ -7,7 +7,8 @@ print(l1)
 ITERATOR :
 ----------
 Iterator is an object which will return data, one element at a time. 
-Technically speaking, Python iterator object must implement two special methods, __iter__() and __next__() ,   collectively called the iterator protocol.
+Technically speaking, Python iterator object must implement two special methods, __iter__() and __next__() ,   
+collectively called the iterator protocol.
 An object is called iterable if we can get an iterator from it.
 '''
 

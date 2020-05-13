@@ -3,7 +3,7 @@ import random
 
 
 def captcha(letters=6):
-    l = list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789*&%$#@!')
+    l = list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
     s = ''
     for i in range(letters):
         s = s + random.choice(l)

@@ -2,6 +2,7 @@ try:
     a = int(input('Enter a number:'))
     b = int(input('Enter b number:'))
     r = a / b
+
 except Exception as e:
     print(e)
 try:

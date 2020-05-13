@@ -28,7 +28,7 @@ list1.__iter__() ==> iterator   .__next__()
 '''
 Python Iterators :
 -----------------
-Iterators are objects that can be iterated upon. 
+Iterators are the objects that can be iterated upon. 
 Let us see how iterator works and how you can build your own iterator
  using __iter__ and __next__ methods.
 

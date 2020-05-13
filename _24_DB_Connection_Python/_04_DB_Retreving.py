@@ -9,11 +9,10 @@ with con:
 
     rows = cur.fetchall()
     # print(rows)   # for testing output
-
     # for row in rows:      # for testing output from DB
     # print(f"{row[0]} {row[1]} {row[2]}")
 
-with open("C:/Users/manne/Desktop/out2.csv", "w") as f:
+with open("C://Users//naveen.kuruva//Desktop//out2.csv", "w") as f:
     writer = csv.writer(f, lineterminator='\n')
     writer.writerow(['S.NO',
                      'Car Name',

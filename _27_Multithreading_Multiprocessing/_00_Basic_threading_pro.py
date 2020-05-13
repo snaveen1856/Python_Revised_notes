@@ -15,8 +15,8 @@ else:
  """
 """ 
 #########  creating a thread without using a class ################
-from threading import *
 
+from threading import *
 
 # create a function
 def display():
@@ -32,7 +32,6 @@ for i in range(5):  # create the thread and specify the function as its target
 """
 ############ creating our own thread #############
 from threading import Thread
-
 
 # create a class as sub class to Thread class
 class MyThread(Thread):
@@ -51,7 +50,6 @@ t1.join()
 """
 ######## a thread that accesses the instance variables ##########
 from threading import *
-
 
 # create a class as sub class to Thread class
 class MyThread(Thread):
@@ -72,6 +70,7 @@ t1.start()  # wait till the thread completes execution
 t1.join()
 """
 # creating a thread without making sub class to Thread class
+
 from threading import *
 
 

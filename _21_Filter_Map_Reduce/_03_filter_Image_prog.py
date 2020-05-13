@@ -28,7 +28,7 @@ for vowel in filteredVowels:
 
 # importing pandas as pd 
 
-import pandas as pd
+# import pandas as pd
 
 # Creating the Series
 sr1 = 0

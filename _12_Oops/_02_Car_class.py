@@ -3,18 +3,18 @@ class Car:
     year = 2020
     car_count = 0
 
-    def __init__(self, modle, bhp, fuel):
-        self.modle = modle
+    def __init__(self, model, bhp, fuel):
+        self.modle = model
         self.bhp = bhp
         self.fuel = fuel
         Car.car_count += 1
 
     def __str__(self):
-        return f"Car Model:{self.modle}   BHP:{self.bhp}   Fuel:{self.fuel}"
+        return f"Car Model:{self.model}   BHP:{self.bhp}   Fuel:{self.fuel}"
 
     @classmethod
     def get_detail(cls):
-        return f"Company:{Car.company}  Year:{Car.year}  Car count:{Car.car_count}"
+        return f"Company:{Car.company}  Year:{Car.year}  Car count:{Car.car_count} "
 
 
 c1 = Car('GTS', 2500, 'petrol')

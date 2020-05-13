@@ -1,7 +1,7 @@
 def check_num(n):
     l = [i for i in range(1, 100)]
     if n in l:
-        print('entered number is in given range! ')
+        print('entered number is in given range!')
     else:
         print('entered number is not in given range!')
 

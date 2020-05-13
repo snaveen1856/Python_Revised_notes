@@ -16,8 +16,5 @@ try:
 except Exception as e:
     print(e)
 
-else:
-    print(l)
-
 finally:
     print('Names List:', l)

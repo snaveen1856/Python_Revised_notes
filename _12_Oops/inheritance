@@ -1,6 +1,5 @@
 Data
 
-
     Parent
 	
     Child   --- Behavior     --- methods
@@ -11,17 +10,9 @@ Data
 				Sub   class    Child  class  Derived class
 				
 	
-	
-	
-	
-         				ANIMAL 
+      				ANIMAL
 			WILD A               DOMESTIC A
 		LION TIGER 		         CAT     DOG	
-
-
-
-
-
 
 
 Approach 1 : Wrong   : Multiple methods we have to keep on add in class Animal. 
@@ -77,11 +68,7 @@ a1.m1()  --- Wrong
 a1.m2()  --- Wrong 
 
 
-
-
 class Animal(object):
-
-
 
 navn = Employee()
 
@@ -90,15 +77,6 @@ setattr()
 hasattr()
 getattr()
 delattr()
-
-
-
-
-
-
-
-
-
 
 
 

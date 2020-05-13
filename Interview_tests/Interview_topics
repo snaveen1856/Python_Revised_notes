@@ -1,0 +1,76 @@
+Basics:
+======
+DataStructures:
+==============
+    List  ListComprehension, diff between list(mutable), tuple (immutable)
+    Dict DictComprehension
+    Set ,
+    Tuple
+    String  (immutable)
+
+Concepts:
+=========
+    Iterator
+    generator
+    decorator
+    with function
+    exception handling
+
+Functions:
+==========
+    Arguments (Variable Arguments, Keyword Arguments)
+
+OOPS:
+====
+    Class
+    dunder Methods (Operator overloading)
+    Super
+    MRO (Method Resolution Order , C3 Algorithm)
+    MetaClasses , Type classes, __new__
+    Inheritance
+    Concepts:
+    ========
+        Association (has-a (week), partof (Strong))
+        Inheritance (is-a) Relationship
+        overloading vs overriding
+        SOLID Principles
+        Design Patterns (Singleton, Visitor, Observer, Proxy)
+
+Threading:
+=========
+    Producer, Consumer Problem (use queue to connect producer and consumer)
+    GIL (Global Interpreter Lock)
+    Threads Creation, ThreadPool, Multiprocessing Pool,
+    thread events and signals
+    Threads Sync
+
+File-handling:
+=============
+regex, readfiles thru lines and process
+
+Problems
+========
+    1.List-comprehension (even list, odd list, )
+    2.String "10,203,30,40" => sum of , string reverse "SSS"[::-1]
+    3.given length random numbers of characters
+    4.count word in sentence  (using stop words) (dict)
+    5.count vowels in sentence
+    6.Common elements , different elements in list (set)
+    7.dictionary key,value reverse
+    8.regex for email, ip-address , url
+    9.list of prime number
+   10.max, min, fizz-buzz , sum , implement range function
+   11.collection deque,
+   12.how to use list as stack and queue
+   13.parenthesis balance check
+
+https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+
+30 Python Language Features and Tricks You May Not Know About
+
+sahandsaba.com
+
+A list of Python tips and tricks. See how many of them you already know. Coding, mathematics,
+and problem solving by Sahand Saba.
+
+

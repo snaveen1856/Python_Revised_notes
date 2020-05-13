@@ -5,6 +5,6 @@
 1205,Miller,Salesman,25000
 1206,John,Salesman,24000
 1207,Siva,Manager,48000
-1208,Ravi,Salesman,24000
+1208,Vijay,Salesman,24000
 1209,Ram,Clerk,30000
 1210,Sai,Clerk,34000

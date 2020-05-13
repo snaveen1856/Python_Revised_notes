@@ -10,7 +10,7 @@ for i in x:
     w = i + w
 if x == w:
     print("YES")
-print('---------------------------------------------')
+print('----------------- Patterns ----------------------------')
 n = 5
 for idx in range(n - 1):
     print((n - idx) * ' ' + (2 * idx + 1) * '*')
@@ -45,12 +45,14 @@ def prime():
     else:
         print('please enter a number greater than 1')
 
-prime()"""
+prime()
+"""
 n = input('Enter a number:')
 w = ''
 num_sum = 0
 for i in n:
-
     w = i + w
+    i = int(i)
+    num_sum += i
 print(w)
 print(num_sum)

@@ -1,4 +1,5 @@
-""" OTP generate using random and  infinate loops
+"""
+OTP generate using random and  infinite loops
 """
 while True:
     import random

@@ -1,10 +1,10 @@
 def fibonaci(a):
-    s = 0
-    n = 1
+    t1 = 0
+    t2 = 1
     i = 1
     while i <= a:
-        print(s, end=' ')
-        s, n = n, n + s
+        print(t1, end=' ')
+        t1, t2 = t2, t1 + t2
         i += 1
 
 

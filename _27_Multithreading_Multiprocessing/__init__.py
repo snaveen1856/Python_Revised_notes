@@ -10,7 +10,7 @@ is generally not available to  another process unless both the processes communi
 A thread also represents a group of statements within a program. When we want to use  threads, we have to create them
 separately which are in turn run by the main thread.  Threads will not have their own memory and program counter.
 The data of one thread is  shared easily by another thread. So, it is possible that a thread can easily modify the
-data of another thread.  Any program utilizes resources like memory and processor time. Hence it is called heavy
+data of another thread. Any program utilizes resources like memory and processor time. Hence it is called heavy
 weight process. But a thread is a small part of the program that takes very less memory  and processor time.
  Hence threads are called light weight processes.
 

@@ -1,9 +1,10 @@
 def decorator(fun_name):
-    def wraper(*args, **kwargs):
+
+    def wrapper(*args, **kwargs):
         result = fun_name(*args, **kwargs)
         return result
 
-    return wraper
+    return wrapper
 
 
 @decorator
@@ -53,7 +54,7 @@ def factorial(num):
 # calling the function.
 factorial(10)
 print('===============================================================================')
-
+"""
 
 def smart_divide(func):
     def inner(a, b):
@@ -70,3 +71,4 @@ def smart_divide(func):
 @smart_divide
 def divide(a, b):
     return a / b
+"""

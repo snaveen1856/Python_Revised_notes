@@ -19,5 +19,5 @@ def check_uniq(l):
 
 l = [random.randint(1, 50) for i in range(10)]
 print('List l:', l)
-nw_l = unique_l(l)
+unique_l(l)
 print('Using function check num in list: ', check_uniq(l))

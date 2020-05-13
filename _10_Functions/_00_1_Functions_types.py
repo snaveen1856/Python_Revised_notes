@@ -1,5 +1,5 @@
 def sum_(num1: list, num2):
-    # print("-------",type(num1))
+    print("-------", type(num1))
     result = num1 + num2
     print("result is ", result)
     return result
@@ -7,9 +7,7 @@ def sum_(num1: list, num2):
 
 output = sum_(10, 20)
 print(output)
-
 print(sum_(10, 20))
-
 print("Type of sum ", type(sum_), type(10))
 
 # https://realpython.com/primer-on-python-decorators/
@@ -17,7 +15,7 @@ print("Type of sum ", type(sum_), type(10))
 '''
 Functions:
 ============
-1.First Class functions
+1. First Class functions
 2. Nested Functions
 3. Returning Functions
 '''
@@ -41,7 +39,7 @@ x = sam(10)
 print("Assigned to x :", x)
 
 op = get_details(sam(10))
-print("Func call with funtioncall as arg: ", op)
+print("Func call with function call as arg: ", op)
 
 print(sam(2) == 3)  # functions return a value based on the given arguments.
 
@@ -56,13 +54,13 @@ def navn(bar):
 navn(2)
 print(navn(3))
 print(type(navn(sam(10 + 20))))
-print("Type of foo2 :", type(navn))
-print("Function foo2 ", navn)
+print("Type of Navn :", type(navn))
+print("Function Navn ", navn)
 
 print("------------------------------------")
 
 '''
-Here foo_func requires function name why because 
+Here Navn_func requires function name why because 
 we have used the same parameter during function call
 '''
 
@@ -76,25 +74,24 @@ we have used the same parameter during function call
 
 
 # 1.A
-def john(bar):  # foo(10)
-    print("---------in foo() function-----------")
+def john(bar):  # john(10)
+    print("---------in john() function-----------")
     return bar + 1
 
 
-print("--------------- foo-------------------", john())
-print("--------type of foo-------------------", type(john))
+print("--------------- john-------------------", john(2))
+print("--------type of john-------------------", type(john))
 
 
 # 2. B
-def call_john_with_arg(john_func, val):
-    print("---------in call_foo_with_arg() function-----------")
+def call_func_with_arg(john_func, val):
+    print("---------in call_john_with_arg() function-----------")
     res = john_func(val)
 
-    return res  # foo("python")
+    return res  # john("python")
 
 
 print("Normal class function call:", john(100))
 # 3. C
-print("First class function call :", call_john_with_arg(john, 100))  # foo(100) ==> foo  100
-
+print("First class function call :", call_func_with_arg(john, 100))  # john(100) ==> john  100
 print("------------------------------------")

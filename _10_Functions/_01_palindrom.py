@@ -6,9 +6,15 @@ def str_(str1):
     else:
         # pass
         print('It is not palindrome!')
-    return 5
+    res_str = ''
+    for i in str1:
+        res_str = i + res_str
+    if str1 == res_str:
+        print('palindrome')
+    else:
+        print('Not a palindrome')
 
 
-str1 = input('Enter a string:')
-str_(str1)
-# print('i am printing return value',x)
+string = input('Enter a string:')
+str_(string)
+# print(f'{str1} is a ', str_(str1))

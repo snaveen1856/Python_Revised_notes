@@ -83,7 +83,8 @@ def compute_hcf(x, y):
 hcf = compute_hcf(52, 24)
 print("The HCF is:", hcf)
 """
-"""# Sum of natural numbers up to num
+"""
+Sum of natural numbers up to num
 num = 10
 if num < 0:
     print("Enter a positive number")
@@ -108,7 +109,6 @@ for num in range(lower, upper + 1):
     temp = num
     while temp > 0:
         digit = temp % 10
-
         sum += digit ** order
         temp //= 10
     if num == sum:

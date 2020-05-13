@@ -57,6 +57,7 @@ navn = Account(102, 'Naveen', 10000)
 sindu = Account(103, 'Sindhu', 15000)
 navn.credit(5000)
 navn.debit(12000)
+
 # print(navn)
 # sindu.debit(5000)
 # print(sindu)
