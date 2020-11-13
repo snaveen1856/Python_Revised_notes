@@ -14,6 +14,7 @@ list_1 = [random.randint(1, 50) for i in range(10)]
 print('Given list:', list_1)
 print("Even number list:", is_even(list_1))
 print("Using map and lambda functions:", list(filter(lambda n: n % 2 == 0, list_1)))
+print('map function', map(lambda x: x ** 2, list_1))
 print('map function', list(map(lambda x: x ** 2, list_1)))
 # l = 10
 # print("Even number list:", is_even(l))
