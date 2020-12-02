@@ -18,19 +18,19 @@ Concepts:
 
 Functions:
 ==========
-    Arguments (Variable Arguments, Keyword Arguments)
+    Arguments (positional Arguments, Keyword Arguments)
 
 OOPS:
 ====
     Class
-    dunder Methods (Operator overloading)
+    priviate dunder Methods (Operator overloading)
     Super
     MRO (Method Resolution Order , C3 Algorithm)
     MetaClasses , Type classes, __new__
     Inheritance
     Concepts:
     ========
-        Association (has-a (week), partof (Strong))
+        Association (has-a (week), part of (Strong))
         Inheritance (is-a) Relationship
         overloading vs overriding
         SOLID Principles
@@ -46,7 +46,7 @@ Threading:
 
 File-handling:
 =============
-regex, readfiles thru lines and process
+regex, read files through lines and process
 
 Problems
 ========

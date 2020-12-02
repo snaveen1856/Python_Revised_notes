@@ -13,6 +13,12 @@ Django project commands:
  
 > cd <project_name>
 
+> django-admin startproject projectName
+
+> python manage.py startapp projectApp
+
+> python manage.py createsuperuser
+
 if you have pipenv working fine go for pipenv or leave it
 
 > python manage.py makemigrations   ===> if you change model.py file otherwise Not required 
@@ -24,7 +30,6 @@ if you have pipenv working fine go for pipenv or leave it
 To stop our server we have to press  
 > ctrl + c
 
-> python manage.py createsuperuser 
 
 
 Models =======> Views ====> Templates

@@ -47,8 +47,36 @@ class GTAProducer:
             data = ddata
             with Connection("amqp://naveen:naveen@10.10.1.12//") as conn:
                 producer = conn.Producer(serializer="json")
-                producer.publish(data, exchane=self.exchange_items, routing_key=self.routing_key, declare=[self.queue_items])
+                producer.publish(data, exchange=self.exchange_items, routing_key=self.routing_key,
+                declare=[self.queue_items])
                 print("Publish completed")
+
+import json
+from kombu import Connection, Exchange, Queue
+
+class GTAProducer:
+    def __init__(self):
+        queue_name = "Publisher"
+        self.routing_key = "Publisher"
+        self.exchange_items = Exchange("items", "direct", durable=True)
+        self.queue_items = Queue(queue_name,exchange=self.exchange_items, routing_key=self.routing_key)
+        def publish(self, ddata):
+        try:
+            data = ddata
+            with Connection("amqp://naveen:naveen@10.10.1.12//") as conn:
+            producer = conn.Producer(serializer="json")
+            producer.publish(data, exchange=self.exchange_items, routing_key=self.routing_key,
+            declare=[self.queue_items])
+            print("Publish completed")
+        except Exception as e:
+            print("Exception occurred",str(e))
+            raise e
+if __name__ == '__main__':
+    gpub = GTAProducer()
+    d={"a1":1,"b1":2} # actual data you can pass like job_id and routing_key
+    gpub.publish(d) # publish data
+    gpub1 = GTAProducer()
+    gpub1.publish({"c1": 3, "d1": 4})
 
 
 """
@@ -58,9 +86,15 @@ from jinja2 import Template
 
 
 def create_dockerfile(json_data, message):
+    """
+    method which will read docker file
+    :param json_data:
+    :param message:
+    :return:
+    """
     print(json_data)
     sutas_dict = json_data
-    tm = Template(open('srikanth_docker').read())
+    tm = Template(open('gss_docker').read())
     file = tm.render(sutas_dict)
     print(file)
     doc = open('Dockerfile', 'w')
@@ -68,7 +102,8 @@ def create_dockerfile(json_data, message):
     message.ack()
 
 
-class GTAParms_Ride:
+class GTAparmsRide:
+
     def __init__(self):
         queue_name = "Publisher"
         self.routing_key = "Publisher"
@@ -89,11 +124,9 @@ class GTAParms_Ride:
                     print("Param override completed")
         except Exception as e:
             print("Exception occurred", str(e))
-            raise e
-
-
+            raise
 
 
 if __name__ == '__main__':
-    params = GTAParms_Ride()
+    params = GTAparmsRide()
     params.param_overide()
