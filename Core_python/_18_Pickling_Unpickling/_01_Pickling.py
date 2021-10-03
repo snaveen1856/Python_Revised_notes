@@ -2,9 +2,9 @@ import pickle
 
 my_list = ['a', 'b', 'c', 'd']
 data = [[120, 'Naveen', 'Developer', 45000],
-        [120, 'Kumar', 'Manager', 50000],
-        [120, 'Sam', 'Designer', 48000],
-        [120, 'John', 'Test', 46000]
+        [121, 'Kumar', 'Manager', 50000],
+        [122, 'Sam', 'Designer', 48000],
+        [123, 'John', 'Test', 46000]
         ]
 
 dict1 = {'Id': 250, 'name': 'Naveen', 'Course': 'Python', 'fee': 25000}

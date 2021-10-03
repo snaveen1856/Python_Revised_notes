@@ -1,7 +1,7 @@
 import psycopg2
 import csv
 
-con = psycopg2.connect(database='postgres', user='postgres', password='naveen1213')
+con = psycopg2.connect(database='postgres', user='postgres', password='123456')
 
 with con:
     cur = con.cursor()
@@ -12,7 +12,7 @@ with con:
     # for row in rows:      # for testing output from DB
     # print(f"{row[0]} {row[1]} {row[2]}")
 
-with open("C://Users//naveen.kuruva//Desktop//out2.csv", "w") as f:
+with open("C:\\Users\\knave\\OneDrive\\Desktop\\out1.csv", "r+") as f:
     writer = csv.writer(f, lineterminator='\n')
     writer.writerow(['S.NO',
                      'Car Name',

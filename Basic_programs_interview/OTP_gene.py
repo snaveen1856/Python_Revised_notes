@@ -10,3 +10,4 @@ while True:
     s = input('Do you want another OTP:[y/n]:')
     if s in ('n', 'N'):
         break
+print(random.choice('abcdefghijklmnopqrstuvwxyz'))
