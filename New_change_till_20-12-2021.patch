@@ -1,0 +1,439 @@
+Index: Interview_tests/_3rd_2nd_highest_element_list.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Interview_tests/_3rd_2nd_highest_element_list.py b/Interview_tests/_3rd_2nd_highest_element_list.py
+new file mode 100644
+--- /dev/null	(date 1639929685472)
++++ b/Interview_tests/_3rd_2nd_highest_element_list.py	(date 1639929685472)
+@@ -0,0 +1,23 @@
++# 1
++num = [2, 3, 7, 4, 5, 6, 10, 11, 120]
++
++# 2
++largest_num = num[0]
++second_largest_num = num[0]
++third_largest_num = num[0]
++
++# 3
++for i in num:
++    # 4
++    if i > largest_num:
++        third_largest_num = second_largest_num
++        second_largest_num = largest_num
++        largest_num = i
++    # 5
++    elif i > second_largest_num:
++        third_largest_num = second_largest_num
++        second_largest_num = i
++    # 6
++    elif i > third_largest_num:
++        third_largest_num = i
++print(f"Largest No: {largest_num} Second No: {second_largest_num} Third No: {third_largest_num}")
+Index: Core_python/_07_Conditional/_12_Types_for_loop.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Core_python/_07_Conditional/_12_Types_for_loop.py b/Core_python/_07_Conditional/_12_Types_for_loop.py
+--- a/Core_python/_07_Conditional/_12_Types_for_loop.py	(revision 0ba024a4f8e0631e94df1844a012db2555e1f6dc)
++++ b/Core_python/_07_Conditional/_12_Types_for_loop.py	(date 1637753116498)
+@@ -26,4 +26,4 @@
+ print('------------Unpacking of tuple-------------')
+ for value in zip(names, heros, studios):
+     print(value)
+-print(type(value))
++    # print(type(value))
+Index: Interview_tests/wave_labs_sum10_pairs_in_list.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Interview_tests/wave_labs_sum10_pairs_in_list.py b/Interview_tests/wave_labs_sum10_pairs_in_list.py
+new file mode 100644
+--- /dev/null	(date 1637996100141)
++++ b/Interview_tests/wave_labs_sum10_pairs_in_list.py	(date 1637996100141)
+@@ -0,0 +1,72 @@
++# # Python3 program to find all pairs in
++# # a list of integers with given sum
++#
++# def findPairs(lst, K):
++#     res = []
++#     if K in lst:
++#         res.append((K,))
++#     while lst:
++#         num = lst.pop()
++#         diff = K - num
++#         if diff in lst:
++#             res.append((diff, num))
++#     # res.reverse()
++#     return res
++#
++#
++# # Driver code
++# lst = [1, 5, 3, 7, 9]
++# numbers = [1, 2, 3, 7, 8, 7, 9, 20, 10]
++# K = 10
++# print(findPairs(numbers, K))
++#
++# # Python3 program to find all pairs in
++# # a list of integers with given sum
++#
++# from itertools import combinations
++#
++#
++# def findPairs(lst, K):
++#     res = []
++#     if K in lst:
++#         res.append((K,))
++#     for var in combinations(lst, 2):
++#         if var[0] + var[1] == K:
++#             res.append((var[0], var[1]))
++#     for var in combinations(lst, 3):
++#         if var[0] + var[1] + var[2] == K:
++#             res.append((var[0], var[1], var[2]))
++#     return res
++#
++#
++# # Driver code
++# l = [1, 2, 3, 7, 8, 7, 9, 20, 10]
++# K = 10
++# print(findPairs(l, K))
++
++
++def combinations(iterable, r):
++    # combinations('ABCD', 2) --> AB AC AD BC BD CD
++    # combinations(range(4), 3) --> 012 013 023 123
++    pool = tuple(iterable)
++    n = len(pool)
++    if r > n:
++        return
++    indices = list(range(r))
++    yield tuple(pool[i] for i in indices)
++    while True:
++        for i in reversed(range(r)):
++            if indices[i] != i + n - r:
++                break
++        else:
++            return
++        indices[i] += 1
++        for j in range(i + 1, r):
++            indices[j] = indices[j - 1] + 1
++        yield tuple(pool[i] for i in indices)
++
++
++d = [1, 8, 5, 9, 2, 4, 7]
++l = [1, 2, 3, 7, 8, 7, 9, 20, 10]
++print(list(combinations(d, 4)))
++print([i for i in list(combinations(l, 3)) if sum(i) == 10])
+Index: _sample_/R.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/_sample_/R.py b/_sample_/R.py
+--- a/_sample_/R.py	(revision 0ba024a4f8e0631e94df1844a012db2555e1f6dc)
++++ b/_sample_/R.py	(date 1634397654331)
+@@ -1,11 +1,17 @@
+-l = [1, 'a', 2, 9, 8]
+-try:
+-    for i in range(len(l)):
+-        print(l[i])
+-    k = int(input('Enter a number:'))
+-except:
+-    if k <= len(l):
+-        print(l[k])
+-        print('Congrats')
+-    else:
+-        print('Try again')
++# l = [1, 'a', 2, 9, 8]
++# try:
++#     for i in range(len(l)):
++#         print(l[i])
++#     k = int(input('Enter a number:'))
++# except:
++#     if k <= len(l):
++#         print(l[k])
++#         print('Congrats')
++#     else:
++#         print('Try again')
++
++from datetime import *
++
++c = ''
++s = datetime.strptime('22:30', '%H:%M')
++print(s.strftime('%r'))
+Index: Core_python/_07_Conditional/_10_Pattrens_Print_Star.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Core_python/_07_Conditional/_10_Pattrens_Print_Star.py b/Core_python/_07_Conditional/_10_Pattrens_Print_Star.py
+--- a/Core_python/_07_Conditional/_10_Pattrens_Print_Star.py	(revision 0ba024a4f8e0631e94df1844a012db2555e1f6dc)
++++ b/Core_python/_07_Conditional/_10_Pattrens_Print_Star.py	(date 1638209971559)
+@@ -1,5 +1,17 @@
++# Printing different patterns:
++n = int(input('Enter number of row:'))
++for i in range(1, n + 1):
++    for j in range(1, i + 1):
++        print(j, end='')
++    print()
++print('------------------------')
++for i in range(1, n + 1):
++    for j in range(1, i + 1):
++        print(i, end='')
++    print()
++print('--------------------------------------------------')
++
+ n = int(input('Enter a number of rows:'))
+-
+ blank = 20
+ for row in range(1, n + 1):
+     print(' ' * blank, end='')
+Index: Docker/Intro_01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Docker/Intro_01.py b/Docker/Intro_01.py
+new file mode 100644
+--- /dev/null	(date 1638211607009)
++++ b/Docker/Intro_01.py	(date 1638211607009)
+@@ -0,0 +1,35 @@
++"""
++what is a docker?
++
++Docker is a container management service, which mean develop, ship it and run anywhere.
++The whole idea of Docker is for developers to easily develop applications, ship them into containers
++which can then be deployed anywhere.
++
++Features of Docker:
++==================
++1. Docker has the ability to reduce the size of development by providing a smaller footprint of the
++operating system via containers.
++2. With containers, it becomes easier for teams across different units, such as development, QA and
++Operations to work seamlessly across applications.
++3. You can deploy Docker containers anywhere, on any physical and virtual machines and even on the cloud.
++Since Docker containers are pretty lightweight, they are very easily scalable.
++
++
++commonly use commands:
++======================
++docker –version
++docker pull
++docker run
++docker ps
++docker ps -a
++docker exec
++docker stop
++docker kill
++docker commit
++docker login
++docker push
++docker images
++docker rm
++docker rmi
++docker build
++"""
+\ No newline at end of file
+Index: SQL_queries/_01_Most_popular_quaries.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SQL_queries/_01_Most_popular_quaries.sql b/SQL_queries/_01_Most_popular_quaries.sql
+--- a/SQL_queries/_01_Most_popular_quaries.sql	(revision 0ba024a4f8e0631e94df1844a012db2555e1f6dc)
++++ b/SQL_queries/_01_Most_popular_quaries.sql	(date 1637745997016)
+@@ -22,8 +22,8 @@
+ 
+ --# difference between the UNION and UNION ALL
+ 
+---union--> will remove any debulates from date table
+---union all --> will not remove any debulates from date table
++--union--> will remove any deplicates from date table
++--union all --> will not remove any deplicates from date table
+ 
+ drop table hotel;
+ create table hotel(ssn int not null, cname text not null, address text null,start_date date not null, end_date date
+@@ -110,3 +110,30 @@
+ 
+ select e.deptno, count(e.empno) no_of_employee from emp e group by e.deptno
+ order by no_of_employee DESC;
++
++
++CREATE TABLE PLAYER (
++ID INT,  
++FIRST VARCHAR(25),
++YEAR INT  
++);
++
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (1, "Santo", 1977);
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (2, "Santo", 1978);
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (3, "Santo", 1979);
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (4, "Santo", 1980);
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (5, "Santo", 1993);
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (6, "Santo", 1994);
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (7, "Santo", 1994);
++
++
++INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (12, "sa", 1992);
++
++SELECT * FROM PLAYER 
++
++select DISTINCT(FIRST) from player where FIRST 
++IN (select p1.first from player p1 
++inner join player p2 on p1.year = p2.year+1 
++inner join player p3 on p2.year = p3.year+1 and p1.first = p2.first and p2.first=p3.first);
++
++
+Index: Deep_dive_python/setter_and_getter.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Deep_dive_python/setter_and_getter.py b/Deep_dive_python/setter_and_getter.py
+new file mode 100644
+--- /dev/null	(date 1635437518491)
++++ b/Deep_dive_python/setter_and_getter.py	(date 1635437518491)
+@@ -0,0 +1,63 @@
++# class Rectangle(object):
++#     def __init__(self, width, height):
++#         self.width = width
++#         self.heigth = height
++    
++#     def area(self):
++#         return self.width * self.heigth
++    
++#     def perimeter(self):
++#         return 2 * (self.width + self.heigth)
++
++#     def __str__(self):
++#         return f'Rectangle : width = {self.width}, height {self.heigth}'
++
++#     def __repr__(self):
++#         return f'Rectangle {self.width} {self.heigth}'
++    
++# r1 = Rectangle(10,20)
++# str(r1)
++
++############# Setter and Getter in Python ##############
++
++class Rectangle(object):
++    def __init__(self, width, height):
++        self.width = width
++        self.heigth = height
++    
++    def area(self):
++        return self.width * self.heigth
++    
++    def perimeter(self):
++        return 2 * (self.width + self.heigth)
++
++    def __str__(self):
++        return f'Rectangle : width = {self.width}, height {self.heigth}'
++
++    def __repr__(self):
++        return f'Rectangle {self.width} {self.heigth}'
++    
++    @property
++    def height(self):
++        return self._height
++    
++    @height.setter
++    def height(self, height):
++        if height <= 0:
++            raise ValueError("Height must be positive")
++        else:
++            self._height = height
++    
++    @property
++    def width(self):
++        return self._width
++    
++    @width.setter
++    def width(self, width):
++        if width <= 0:
++            raise ValueError("Width must be positive")
++        else:
++            self._width = width
++
++r1 = Rectangle(10,30)
++print(r1)
+Index: Deep_dive_python/garbage_collection.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Deep_dive_python/garbage_collection.py b/Deep_dive_python/garbage_collection.py
+new file mode 100644
+--- /dev/null	(date 1635436757091)
++++ b/Deep_dive_python/garbage_collection.py	(date 1635436757091)
+@@ -0,0 +1,44 @@
++# Garbage Collection
++""" - can be controlled programmatically using the 'gc' module by default it is turned ON.
++    - you may turn it OFF if you are sure your code does not create circular references but Beware.
++    - Run periodically on  its own (if turned ON)
++    - you can call it manually and even do your own clean up 
++    In general GC works just fine.
++    for python 3.4 and above if even one of the objects in the circular reference has a destructure 
++    eg. __del__()
++    the destructure order of the objects may be important but the GC does not know what that order
++    should be so the object is marked as UNCOLLECTABLE
++    and the objects in the circular reference are not cleaned up  ---> Memory leak.
++"""
++
++# Circular References
++
++import ctypes
++import gc
++
++
++def ref_count(address):
++    return ctypes.c_long.from_address(address).value
++
++
++def object_by_id(object_id):
++    for obj in gc.get_objects():
++        if id(obj) == object_id:
++            return "Object exists"
++    return "Not Found"
++
++
++class A:
++    def __init__(self):
++        self.b = B(self)
++        print(f'A: self: {hex(id(self))}, b: {hex(id(self.b))}')
++
++
++class B:
++    def __init__(self, a):
++        self.a = a 
++        print(f'B: self: {hex(id(self))}, a: {hex(id(self.a))}')
++
++
++gc.disable()
++my_var = A()
+Index: Core_python/_08_Loops/_03_Nums_Divide_7_&&_multi_5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Core_python/_08_Loops/_03_Nums_Divide_7_&&_multi_5.py b/Core_python/_08_Loops/_03_Nums_Divide_7_&&_multi_5.py
+--- a/Core_python/_08_Loops/_03_Nums_Divide_7_&&_multi_5.py	(revision 0ba024a4f8e0631e94df1844a012db2555e1f6dc)
++++ b/Core_python/_08_Loops/_03_Nums_Divide_7_&&_multi_5.py	(date 1637753471604)
+@@ -5,4 +5,4 @@
+     if i % 7 == 0 and i % 5 == 0:
+         print(i, end=' ')
+ new_list = [i for i in range(n, m) if i % 7 == 0 and i % 5 == 0]
+-print("\n", new_list)
++print("\nnew_list :", new_list)
+diff --git a/Apachi_Airflow/_34_Airflow_task_manager/__init__.py b/Apache_Airflow/_34_Airflow_task_manager/__init__.py
+rename from Apachi_Airflow/_34_Airflow_task_manager/__init__.py
+rename to Apache_Airflow/_34_Airflow_task_manager/__init__.py
+diff --git a/Apachi_Airflow/_34_Airflow_task_manager/_02_Airflow_trigger.py b/Apache_Airflow/_34_Airflow_task_manager/_02_Airflow_trigger.py
+rename from Apachi_Airflow/_34_Airflow_task_manager/_02_Airflow_trigger.py
+rename to Apache_Airflow/_34_Airflow_task_manager/_02_Airflow_trigger.py
+diff --git a/Apachi_Airflow/execution_dag.py b/Apache_Airflow/execution_dag.py
+rename from Apachi_Airflow/execution_dag.py
+rename to Apache_Airflow/execution_dag.py
