@@ -26,4 +26,4 @@ print()
 print('------------Unpacking of tuple-------------')
 for value in zip(names, heros, studios):
     print(value)
-print(type(value))
+    # print(type(value))

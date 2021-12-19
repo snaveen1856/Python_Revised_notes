@@ -22,8 +22,8 @@ select deportment, count(workers_id) no_of_workers from workers group by deportm
 
 --# difference between the UNION and UNION ALL
 
---union--> will remove any debulates from date table
---union all --> will not remove any debulates from date table
+--union--> will remove any deplicates from date table
+--union all --> will not remove any deplicates from date table
 
 drop table hotel;
 create table hotel(ssn int not null, cname text not null, address text null,start_date date not null, end_date date
@@ -110,3 +110,30 @@ and e.sal > m.sal;
 
 select e.deptno, count(e.empno) no_of_employee from emp e group by e.deptno
 order by no_of_employee DESC;
+
+
+CREATE TABLE PLAYER (
+ID INT,  
+FIRST VARCHAR(25),
+YEAR INT  
+);
+
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (1, "Santo", 1977);
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (2, "Santo", 1978);
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (3, "Santo", 1979);
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (4, "Santo", 1980);
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (5, "Santo", 1993);
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (6, "Santo", 1994);
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (7, "Santo", 1994);
+
+
+INSERT INTO PLAYER (ID, FIRST, YEAR) VALUES (12, "sa", 1992);
+
+SELECT * FROM PLAYER 
+
+select DISTINCT(FIRST) from player where FIRST 
+IN (select p1.first from player p1 
+inner join player p2 on p1.year = p2.year+1 
+inner join player p3 on p2.year = p3.year+1 and p1.first = p2.first and p2.first=p3.first);
+
+
