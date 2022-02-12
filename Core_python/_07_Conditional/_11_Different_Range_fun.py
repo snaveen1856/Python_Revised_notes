@@ -9,5 +9,5 @@ for a in range(10, 0, -1):
     print(a)
 
 print('-------------------------------------')
-for s in range(1, 10, 5):
+for s in range(0, 10, 5):
     print(s)

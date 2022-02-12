@@ -192,3 +192,4 @@ Note: max() and min() checks the based on ASCII values. If there are two strings
 t = (1, 2, 3, 4, 5)
 t1 = (1,)
 print(t, '\n ', t1)
+print(t[2])

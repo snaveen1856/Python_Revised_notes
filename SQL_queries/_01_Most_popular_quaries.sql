@@ -12,6 +12,9 @@ select id, name, salary from emp e1 where n -1=(select count(distinct salary) fr
 
 select id, name, salary from emp e1 where 4-1 = (select count(distinct salary) from emp e2 where e2.salary > e1.salary);
 
+-- # To find the Duplicate record in table
+select * from emp out where (select count(*) from emp inr where inr.emp_id = out.emp_id) > 1
+
 --# get the employee who salary is greater than the his manager salary
 
 select id, name, salary from emp e, emp m where e.manager_id = m.emp_id and e.salary > m.salary;
@@ -26,8 +29,8 @@ select deportment, count(workers_id) no_of_workers from workers group by deportm
 --union all --> will not remove any deplicates from date table
 
 drop table hotel;
-create table hotel(ssn int not null, cname text not null, address text null,start_date date not null, end_date date
-				  null,room_type char(9) null);
+create table hotel(ssn int not null, cname text not null, address text null,
+             start_date date not null, end_date date null,room_type char(9) null);
 
 
 
