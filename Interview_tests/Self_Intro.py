@@ -1,6 +1,6 @@
 """
-I'm Naveen kumar.k and I've 5.8 years experience as Python Developer with Flask,Django and Django REST.
-I worked mainly with Data structures,Comprehension,OOPs,Decorators,Regular Expressions,File Handling and 
+I'm Naveen kumar.k and I've 5.7 years experience as Python Developer with Flask,Django and Django REST.
+I've worked mainly with Data structures,Comprehension,OOPs,Decorators,Regular Expressions,File Handling and 
 Exception Handling.
 
 Coming to my recent project, ReAmped Energy is an independent electricity provider operating in New South Wales,
@@ -51,7 +51,7 @@ using py-test.
 
 Micro-service:
 =============
-It is a way to breaking your big monolithic application into two or more Standalone and Independent applications 
+It is a way of breaking your big monolithic application into two or more Standalone and Independent applications 
 that can be Run on different hardware or server instances. They can communicate each other over a REST API and 
 works together to get functionality of an application or a product.
 
