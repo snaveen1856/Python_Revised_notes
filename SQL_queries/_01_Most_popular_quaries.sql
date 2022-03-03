@@ -25,8 +25,8 @@ select deportment, count(workers_id) no_of_workers from workers group by deportm
 
 --# difference between the UNION and UNION ALL
 
---union--> will remove any deplicates from date table
---union all --> will not remove any deplicates from date table
+--union--> will remove any duplicates from date table
+--union all --> will not remove any duplicates from date table
 
 drop table hotel;
 create table hotel(ssn int not null, cname text not null, address text null,

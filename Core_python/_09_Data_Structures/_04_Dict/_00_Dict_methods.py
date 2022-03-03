@@ -30,3 +30,12 @@ s.popitem()
 print('S dict:', s)
 # print(d)
 # print(k)
+rates = [11, 2, 10, 15, 20, 13, 2]
+times = [10, 11, 12, 13, 14, 15, 16]
+new_dict = {}
+for i in range(len(times)):
+    key = rates[i]
+    value = times[i]
+    d = {key: value}
+    new_dict.update(d)
+print(new_dict)

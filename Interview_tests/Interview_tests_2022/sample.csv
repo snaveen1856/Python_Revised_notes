@@ -1,0 +1,3 @@
+src,dest,traffic,protocol,port
+'10.0.1.10/32','192.168.1.1./32','ingress','TCP',22
+'10.1.1.11/32','172.168.1.10/32','egress','TCP',22
