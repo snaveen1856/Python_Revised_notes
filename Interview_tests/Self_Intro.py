@@ -1,7 +1,7 @@
 """
-I'm Naveen kumar.k and I've 5.8 years experience as Python Developer with Flask,Django and Django REST.
+I'm Naveen kumar.k and I've 5.9 years experience as Python Developer with Flask,Django and Django REST.
 I've worked mainly with Data structures,Comprehension,OOPs,Decorators,Regular Expressions,File Handling and 
-Exception Handling.
+Exception Handling in python. In AWS, I've worked on EC2, and IAM. Knowledge of Lambda, S3.
 
 Coming to my recent project, ReAmped Energy is an independent electricity provider operating in New South Wales,
 Victoria, Queensland, South Australia. It was designed in Flask, Python, Odoo Framework, RabbitMQ and Zato. 
