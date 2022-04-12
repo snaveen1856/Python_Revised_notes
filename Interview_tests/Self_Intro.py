@@ -1,13 +1,13 @@
 """
-I'm Naveen kumar.k and I've 5.9 years experience as Python Developer with Flask,Django and Django REST.
-I've worked mainly with Data structures,Comprehension,OOPs,Decorators,Regular Expressions,File Handling and 
-Exception Handling in python. In AWS, I've worked on EC2, and IAM. Knowledge of Lambda, S3.
+I'm Naveen kumar.K and I've 5.9 years IT experience. Around 5 years I've worked as Python Developer with Django and
+Django REST.I've worked mainly with Data structures,Comprehension,OOPs,Decorators,Regular Expressions,File Handling and
+Exception Handling in python. In AWS, I've worked on EC2, AWS cloudwatch and IAM. Knowledge of Lambda, S3.
 
-Coming to my recent project, ReAmped Energy is an independent electricity provider operating in New South Wales,
-Victoria, Queensland, South Australia. It was designed in Flask, Python, Odoo Framework, RabbitMQ and Zato. 
+Coming to my recent project, ReAmped Energy is an independent electricity provider operating in Australia. It was
+designed in Python, Flask, Odoo Framework, RabbitMQ and Zato.
 We are provided API's to client and CX which can be handled with Flask and Python, and backend functionality was handled 
 with Odoo framework, RabbitMQ and Zato. Complete project we are hosting in AWS and every day we analyize the live
-logs in AWS could Watch and have a required action for those error if any. 
+logs with AWS could Watch and have a required action for those error if any.
 
 This project was developed in OpenERP7 and python 2.7 and 
 I have worked invoice steps processing, some crons (DNC and DBS) cron implementing.
@@ -76,5 +76,16 @@ Orchestration is the traditional way of handling interactions between different 
 Architecture (SOA). ... For example, if three services needed to be called in a particular order, the orchestrator 
 makes a call to each one, waiting for a response before calling the next.
 
+Zato:
+----
+Zato is an open source Python-based middleware platform and backend application server. 
+It was designed as an agile ESB (Enterprise Service Bus) aimed at building systems of systems 
+either on-premise or in the cloud. Zato provides SOA (Service Oriented Architecture), 
+REST (Representational State Transfer), APIs and cloud integration, as well as back-end services 
+exposure to front-end clients.
+Zato is a powerful and scalable platform that not only assists in building and orchestrating integration services, but 
+also enhances intercommunication across applications and data sources. It can keep in order all technical solutions your
+business uses and open way for new opportunities and processes. Usage of a wide range of connectors, data formats and 
+protocols allows Zato to avoid restricting architectural style or enforcing any other limitations.
 """
 
