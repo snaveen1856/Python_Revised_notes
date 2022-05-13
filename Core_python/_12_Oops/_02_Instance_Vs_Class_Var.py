@@ -18,7 +18,7 @@ class Employee:
         else:
             print(self.name, " is a software engineer office is :",self.office_name)
 
-navn = Employee(100,"Naveen",10000)  # Object creation, navn is an object which is of type Employee
+navn = Employee(100,"Ram",10000)  # Object creation, navn is an object which is of type Employee
 navn.get_emp_desn()  # Employee.get_emp_desn(navn)
 
 sai = Employee(200,"sai",25000)
@@ -67,7 +67,7 @@ class Employee:
 
 print("-----Employee count ---Company start-------", Employee.emp_count)
 
-navn = Employee(100, "Naveen", 10000)  # Object creation, navn is an object which is of type Employee
+navn = Employee(100, "Ram", 10000)  # Object creation, navn is an object which is of type Employee
 
 print("-----Employee count --navn--------", Employee.emp_count)
 print(Employee.office_name)

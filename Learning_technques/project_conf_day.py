@@ -68,7 +68,7 @@ def write_db_git(ds, **kwargs):
         insert_query = """ INSERT INTO authentication_executionstatus (user_id, key, value) VALUES (%s,%s,%s)"""
         record_to_insert = (user_id, state, status)
         cur.execute(insert_query, record_to_insert)
-        '{"git_dire":"/home/admin/git_script/Pro_repo","git_url":"https://github.com/snaveen1856/GTA_ref_repo.git",' \
+        '{"git_dire":"/home/admin/git_script/Pro_repo","git_url":"https://github.com/sRam1856/GTA_ref_repo.git",' \
         '"pro_dire":"/home/admin/git_script/Pro_repo/GTA_ref_repo/","imagename":"sutas01:v01",' \
         '"containername":"sutas01","testcase":"sutas_test.py"} '
 

@@ -1,4 +1,4 @@
-file = open("C:/Users/naveen.kuruva/Desktop/names.txt", "w")
+file = open("<filename>", "w")
 print("File path  :", file.name)
 print("Mode       :", file.mode)
 print("File closed?", file.closed)

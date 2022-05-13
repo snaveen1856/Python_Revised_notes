@@ -1,10 +1,10 @@
 # user define function
-def greet(user='Chinni', msg='Good morning'):
+def greet(user='madhu', msg='Good morning'):
     print(f"Hello  {user}  {msg}")
 
 
 # default parameter
 greet()
-greet('Sindhu')
-greet('Naveen', 'Good Evening')
+greet('Divyasri')
+greet('Ram', 'Good Evening')
 greet(msg='Good morning')

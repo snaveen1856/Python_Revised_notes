@@ -62,10 +62,10 @@ class Employee:
         print("next() EXECUTED")
 
 
-naveen = Employee(10, "Naveen", 15000)  # naveen is an iterable object
+Ram = Employee(10, "Ram", 15000)  # Ram is an iterable object
 # madhu.__init__()
-naveen.__iter__()  # iter(naveen)  gives Iterator object
-naveen.__next__()  # next(naveen)  gives each elements during iteration
+Ram.__iter__()  # iter(Ram)  gives Iterator object
+Ram.__next__()  # next(Ram)  gives each elements during iteration
 
 print("********Employee class***************")
 

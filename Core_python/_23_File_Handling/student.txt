@@ -1,5 +1,5 @@
-101,Naveen,Python
-102,Sindhu,Python
+101,Ram,Python
+102,Divyasri,Python
 103,Vijay,Java
 104,Siva,Java
 105,Bramesh,C lang

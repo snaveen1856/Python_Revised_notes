@@ -16,7 +16,7 @@ pop()===========> Removes the element with the specified key
 popitem()=======> Removes the last inserted key-value pair
 update()========> Updates the dictionary with the specified key-value pairs
 """
-d = {'name': 'Sindhu', 'empno': 7081, 'sal': 85000, 'comp': 'GSS'}
+d = {'name': 'Divyasri', 'empno': 7081, 'sal': 85000, 'comp': 'GSS'}
 print(d)
 s = d.copy()
 # dict_from = d.fromkeys()

@@ -1,4 +1,4 @@
-my_file = open("C:/Users/naveen.kuruva/Desktop/sample.txt", 'r')
+my_file = open("sample.txt", 'r')
 
 print(type(my_file))
 # Read data from file
@@ -19,7 +19,7 @@ print("-------------------------------------------------------------------------
 
 # Using with statement
 print("----------------Using with statement----------------------")
-with open("C:/Users/naveen.kuruva/Desktop/sample.txt", 'r') as my_file:
+with open("sample.txt", 'r') as my_file:
     for each_line in my_file:
         words = each_line.split()
         print(words)

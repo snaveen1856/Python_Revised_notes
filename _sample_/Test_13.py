@@ -6,7 +6,7 @@ convert python dict to json
 '''
 dict_1 = {
     'id': 128302,
-    'name': 'Naveen kumar',
+    'name': 'Ram kumar',
     'salary': 123947,
     'designation': 'developer'
     }

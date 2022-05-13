@@ -7,8 +7,8 @@ str1[0]='x'
 ERROR:
    str[0]='x'
 TypeError: 'str' object does not support item assignment  '''
-a = 'Naveen'
-b = 'Chinni'
+a = 'Ram'
+b = 'madhu'
 print('Object reference address of a:', a, id(a))
 print('Object reference address of b:', b, id(b))
 a = b  # Here not change string object a to b,just assign 'a' grabage collection
@@ -17,7 +17,7 @@ print('After Assigning a=b Object reference address of b', id(b))
 print('---------Replacing of String----------')
 s = 'That is a Beautiful girl'
 s1 = 'That'
-s2 = 'Sindhu'
+s2 = 'Divyasri'
 print('Old String:', s)
 n = s.replace(s1, s2)
 print('After changing string:', n)
@@ -27,7 +27,7 @@ l = k.split(',')
 print(l)
 for a in l:
     print(a)
-m = 'Hi! Chinni How are you doing I am fine here'
+m = 'Hi! madhu How are you doing I am fine here'
 p = m.split(' ')  # Default seperator is space it will take and do operation
 print(p)
 sep = ':'

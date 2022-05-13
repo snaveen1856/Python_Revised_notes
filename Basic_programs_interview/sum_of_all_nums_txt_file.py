@@ -1,4 +1,4 @@
-file_name = 'C:\\Users\\naveen.kuruva\\Desktop\\sample.txt'
+file_name = 'C:\\Users\\Ram.kuruva\\Desktop\\sample.txt'
 """
 with open(file_name, 'r') as f:
     line = f.read()

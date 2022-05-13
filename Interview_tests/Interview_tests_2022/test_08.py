@@ -1,4 +1,4 @@
-string = 'this is naveen'
+string = 'this is Ram'
 words = string.split(' ')
 req_words = [word[::-1] for word in words]
 print(req_words)

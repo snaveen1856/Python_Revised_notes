@@ -21,15 +21,15 @@ def xyz():
     return [lambda x: i * x for i in range(4)]
 
 
-def naveen(i=[]):
+def Ram(i=[]):
     i.append(1)
     return i
 
 
 print(xyz())
 print([m(2) for m in xyz()])
-print(naveen())
-print(naveen())
+print(Ram())
+print(Ram())
 
 
 def is_palindrome(word, in_pos):

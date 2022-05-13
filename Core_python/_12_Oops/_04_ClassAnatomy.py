@@ -52,7 +52,7 @@ class Employee1:
     # FIELDS 
     # para constructor
 
-    def __init__(self, eid, name="Naveen", sal=10000):
+    def __init__(self, eid, name="Ram", sal=10000):
         self.eid = eid
         self.name = name
         self.sal = sal
@@ -83,7 +83,7 @@ class Employee1:
     
 
 '''
-navn = Employee1(100, "Naveen", 15000)  # Object creation, navn is an object which is of type Employee
+navn = Employee1(100, "Ram", 15000)  # Object creation, navn is an object which is of type Employee
 
 print(navn.get_emp_hike())
 navn.get_emp_desn()  # Employee.get_emp_desn(navn)
@@ -134,7 +134,7 @@ print(list1.append([2, 4]))
 # class method calling
 Employee1.emp_count()
 
-navn = Employee1(10, "Naveen", 1000)
+navn = Employee1(10, "Ram", 1000)
 print(navn)
 list1 = [1, 2, 3]
 print(list1)

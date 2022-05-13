@@ -30,7 +30,7 @@ print("Dt =", dt)
 s = {k: v for k, v in d}
 print('s =', s)
 
-a = 'i am naveen'
+a = 'i am Ram'
 a1 = a.split(' ')
 print('a1 =', a1)
 print('a1 =', a[::-1])

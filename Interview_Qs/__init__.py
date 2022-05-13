@@ -30,9 +30,9 @@ class Student:
         print(self.sid, " ", self.name, " ", self.section)
 
 
-naveen = Student(100, "NaveenKumar K", "S1")
+Ram = Student(100, "RamKumar K", "S1")
 
-naveen.student_details()
+Ram.student_details()
 
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 52, 51, 45, 8, 14]
 list2 = list(filter(lambda x: (x % 2 == 0), list1))

@@ -1,5 +1,5 @@
-1201,Naveen,Manager,50000
-1202,Sindhu,Manager,45000
+1201,Ram,Manager,50000
+1202,Divyasri,Manager,45000
 1203,Sam,Clerk,30000
 1204,Smith,Clerk,30000
 1205,Miller,Salesman,25000

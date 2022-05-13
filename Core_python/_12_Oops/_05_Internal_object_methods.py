@@ -13,7 +13,7 @@ class Employee(object):
 
     """
 
-    def __init__(self, eid, name="Naveen kumar", sal=10000):
+    def __init__(self, eid, name="Ram kumar", sal=10000):
         self.eid = eid
         self.name = name
         self.sal = sal
@@ -31,7 +31,7 @@ class Employee(object):
             print(self.name, " is a softwatre engineer")
 
 
-navn = Employee(100, "Naveen kumar")
+navn = Employee(100, "Ram kumar")
 navn.get_emp_desn(100)
 navn.get_emp_hike(100000)
 

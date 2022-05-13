@@ -14,7 +14,7 @@ class Student:
         print("In student get_class method")
 
 
-navn = Student(10, "Naveen")
+navn = Student(10, "Ram")
 navn.get_details()
 
 

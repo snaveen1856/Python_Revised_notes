@@ -6,7 +6,7 @@ con = None
 try:
 
     con = psycopg2.connect(database='postgres', user='postgres',
-                           password='naveen1213')
+                           password='Ram1213')
 
     cur = con.cursor()
     cur.execute('SELECT version()')

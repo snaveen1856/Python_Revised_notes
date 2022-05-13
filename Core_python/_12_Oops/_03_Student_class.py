@@ -37,7 +37,7 @@ class Student:
 
 
 try:
-    navn = Student(101, 'Naveen', 'Python', 10000, 98)
+    navn = Student(101, 'Ram', 'Python', 10000, 98)
     sai = Student(102, 'Sai B', 'Python', 9000, 96)
     sam = Student(103, 'Sam N', 'Java', 10000, 56)
     john = Student(104, 'John', 'Data Science', 15000, 31)

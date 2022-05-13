@@ -34,7 +34,7 @@ create table hotel(ssn int not null, cname text not null, address text null,
 
 
 
-insert into hotel values(12,'Naveen','kurnool','01-02-2019','01-03-2019','A/c');
+insert into hotel values(12,'Ram','kurnool','01-02-2019','01-03-2019','A/c');
 insert into hotel values(13,'Sai','kurnool','01-02-2019','31-12-2019','Normal');
 insert into hotel values(14,'Ram','Tirupati','01-02-2019','01-03-2020','A/c');
 insert into hotel values(12,'Sam','Hyderabad','01-04-2019');

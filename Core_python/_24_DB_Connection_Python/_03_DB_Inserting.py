@@ -2,7 +2,7 @@
 import psycopg2
 
 con = psycopg2.connect(database='postgres', user='postgres',
-                       password='naveen1213')
+                       password='Ram1213')
 
 with con:
 

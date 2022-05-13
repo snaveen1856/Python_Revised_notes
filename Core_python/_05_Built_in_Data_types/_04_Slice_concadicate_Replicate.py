@@ -2,7 +2,7 @@ s = 'Hello world'
 
 n = "Hi! Madam, how are you doing?"
 
-k = '''Hi! Sindhu, 
+k = '''Hi! Divyasri, 
 How are you? I'm waiting here
 Come to my home.'''
 

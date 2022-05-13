@@ -11,7 +11,7 @@ class Value_not(Exception):
 
 
 try:
-    d = {'Naveen': 1234, 'Sindhu': 1213, 'Sai': 1856, 'Chinni': 1729}
+    d = {'Ram': 1234, 'Divyasri': 1213, 'Sai': 1856, 'madhu': 1729}
     name = input('Enter your name:')
     a = d.get(name, -1)
     if a == -1:

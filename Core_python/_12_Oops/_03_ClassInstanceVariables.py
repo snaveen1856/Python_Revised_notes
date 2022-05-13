@@ -47,7 +47,7 @@ class Employee:
 
 Employee.get_emp_count()
 
-navn = Employee(10, "Sai Naveen", 10000)
+navn = Employee(10, "Sai Ram", 10000)
 
 navn.get_emp_details()  # OR
 Employee.get_emp_details(navn)
@@ -98,9 +98,9 @@ print("Employee.__bases__:", Employee.__bases__)
 print("----------------------------------")
 
 # object releated Functions   C R U D
-print("Does Naveen has salary : ", hasattr(navn, "sal"))  # R
-print("Get name of Naveen     : ", getattr(navn, "name"))  # R
-print("Set name of Naveen      : ", setattr(navn, "name", "MAD"))  # U
-print("Get name of Naveen    : ", getattr(navn, "name"))
-print("Delete Naveen  salary  : ", delattr(navn, "sal"))  # D
-print("Delete Naveen  salary  : ", getattr(navn, "sal"))
+print("Does Ram has salary : ", hasattr(navn, "sal"))  # R
+print("Get name of Ram     : ", getattr(navn, "name"))  # R
+print("Set name of Ram      : ", setattr(navn, "name", "MAD"))  # U
+print("Get name of Ram    : ", getattr(navn, "name"))
+print("Delete Ram  salary  : ", delattr(navn, "sal"))  # D
+print("Delete Ram  salary  : ", getattr(navn, "sal"))

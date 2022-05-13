@@ -77,10 +77,10 @@ def fib():
 f = fib()  # the generator (the factory) is instantiated and returned.
 # No code will be executed at this point:
 # the generator starts in an idle state initially
-print("Naveen")
+print("Ram")
 # print(f())
 
-print("Naveen", list(islice(f, 0, 10)))
+print("Ram", list(islice(f, 0, 10)))
 print("---------------------Fibonacci Series---------------------")
 
 '''

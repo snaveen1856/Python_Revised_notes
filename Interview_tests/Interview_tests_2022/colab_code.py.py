@@ -186,7 +186,7 @@
 #                                data['invoice_details']['hold_reason']
 # print(invoice_hold_reasons)
 #
-# ripe_fruit_comms_config_data = [{'a':12,'b':(123,'Naveen'),'c':'123Sai'},{'a':15,'b':(124,'Sai'),'c':'12Navn'}]
+# ripe_fruit_comms_config_data = [{'a':12,'b':(123,'Ram'),'c':'123Sai'},{'a':15,'b':(124,'Sai'),'c':'12Navn'}]
 #
 # for record in ripe_fruit_comms_config_data:
 #     record['b'] = record['b'][0]
@@ -689,7 +689,7 @@
 # print("New list1:", new_list1, id(new_list1))
 #
 # print('==========================================')
-# old_list1.append(['Naveen'])
+# old_list1.append(['Ram'])
 # print()
 # print("Old list:", old_list1, id(old_list1))
 # print("New list:", new_list1, id(new_list1))
@@ -941,7 +941,7 @@
 #                                data['invoice_details']['hold_reason']
 # print(invoice_hold_reasons)
 #
-# ripe_fruit_comms_config_data = [{'a':12,'b':(123,'Naveen'),'c':'123Sai'},{'a':15,'b':(124,'Sai'),'c':'12Navn'}]
+# ripe_fruit_comms_config_data = [{'a':12,'b':(123,'Ram'),'c':'123Sai'},{'a':15,'b':(124,'Sai'),'c':'12Navn'}]
 #
 # for record in ripe_fruit_comms_config_data:
 #     record['b'] = record['b'][0]
@@ -1444,7 +1444,7 @@
 # print("New list1:", new_list1, id(new_list1))
 #
 # print('==========================================')
-# old_list1.append(['Naveen'])
+# old_list1.append(['Ram'])
 # print()
 # print("Old list:", old_list1, id(old_list1))
 # print("New list:", new_list1, id(new_list1))

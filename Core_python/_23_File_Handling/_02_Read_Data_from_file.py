@@ -1,4 +1,4 @@
-my_file = open("C:/Users/naveen.kuruva/Desktop/sample.txt", 'r')
+my_file = open("sample.txt", 'r')
 
 # Read data from file
 str_1 = my_file.read()

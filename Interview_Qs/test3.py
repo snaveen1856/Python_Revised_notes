@@ -21,7 +21,7 @@ workbook.save('OutputFile.xls') '''
 rows = [(1, 'Audi', 52642), (2, 'Mercedes', 57127), (3, 'Skoda', 9000),
         (4, 'Volvo', 29000), (5, 'Bentley', 350000)]
 
-with open("C:/Users/naveen.kuruva/Desktop/sample.csv", "w") as f:
+with open("C:/Users/Ram.kuruva/Desktop/sample.csv", "w") as f:
     writer = csv.writer(f, lineterminator='\n')
     writer.writerow(['Datetime of Forecast',
                      'Forecasted Datetime',

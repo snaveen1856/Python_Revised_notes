@@ -58,5 +58,5 @@ class Hybrid_car(Vehicle):
 c1 = Hybrid_car(make='Telsa', seats=2, model='S9', bhp=450, range=500, Type='V8')
 c1.show()
 print('-' * 40)
-c2 = Electric_car(name='Naveen', bhp=630, Type='G6')
+c2 = Electric_car(name='Ram', bhp=630, Type='G6')
 c2.show()

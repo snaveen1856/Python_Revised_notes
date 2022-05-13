@@ -50,7 +50,7 @@ class Employee:
 
 
 # x = 10.5 str list tuple dict set
-navn = Employee(100, "Naveen", 1000)  # object creation
+navn = Employee(100, "Ram", 1000)  # object creation
 print(type(navn))
 
 navn.get_emp_details()

@@ -1,7 +1,7 @@
 # phone book dict{}
 
 # Phones=dict()
-Phones = {'Naveen': 9182206296, 'Sai': 8500312772}
+Phones = {'Ram': 9187988990, 'Sai': 79789789866}
 while True:
     name = input('Enter name (press Enter to stop):')
     if not name:

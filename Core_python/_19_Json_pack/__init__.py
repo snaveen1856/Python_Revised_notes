@@ -4,11 +4,11 @@ import os
 convert python dict to json
 '''
 dict1 ={'Students':[ {'id': 128302,
-                     'name': 'Naveen',
+                     'name': 'Ram',
                     'salary': 123947,
                     'designation': 'Python Developer'},
                    {'id': 128300,
-                     'name': 'Naveen Kumar',
+                     'name': 'Ram Kumar',
                     'salary': 120000,
                     'designation': 'Java Developer'},
                   {'id': 128303,
@@ -17,7 +17,7 @@ dict1 ={'Students':[ {'id': 128302,
                     'designation': 'Python Developer'} ]
                      
          }                               
-#list1 = [100,25000,'Naveen',5000]
+#list1 = [100,25000,'Ram',5000]
 #app_json1 = json.dumps(list1) 
 app_json = json.dumps(dict1)
 print(app_json)

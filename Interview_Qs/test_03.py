@@ -1,6 +1,6 @@
 """
 filename = input('Enter a file name:')
-filename = 'C:\\Users\\naveen.kuruva\\Desktop\\emp.txt'
+filename = 'C:\\Users\\Ram.kuruva\\Desktop\\emp.txt'
 with open(filename, 'r') as f:
     line = f.read()
     # print(line)

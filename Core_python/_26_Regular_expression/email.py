@@ -4,8 +4,8 @@ emails = '''
 CoreyMSchafer@gmail.com
 corey.schafer@university.edu
 corey-321-schafer@my-work.net
-Knaveen1856@gmail.com
-sindhu@gmail
+KRam1856@gmail.com
+Divyasri@gmail
 '''
 
 # pattern = re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+')

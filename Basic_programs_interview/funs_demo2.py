@@ -4,8 +4,8 @@ def greet(user, msg):
 
 
 # positional argument
-greet('sindhu', 'Good morning')
-greet('How are you', 'Naveen')
+greet('Divyasri', 'Good morning')
+greet('How are you', 'Ram')
 
 # keyword argument
-greet(msg="How are you", user="Naveen")
+greet(msg="How are you", user="Ram")

@@ -1,5 +1,5 @@
 """
-d={'Naveen':1234,'Sindhu':1213,'Sai':1856,'Chinni':1729}
+d={'Ram':1234,'Divyasri':1213,'Sai':1856,'madhu':1729}
 name=input('Enter your name:')
 a=d.get(name,-1)
 if a==-1:
@@ -18,7 +18,7 @@ class Account:
     bank = 'SBI'
     branch = 'Bengalure'
     acc_count = 0
-    d = {'Naveen': 1234, 'Sindhu': 1213, 'Sai': 1856, 'Chinni': 1729}
+    d = {'Ram': 1234, 'Divyasri': 1213, 'Sai': 1856, 'madhu': 1729}
 
     def __init__(self, acc_no, name, bal=500):
         self.acc_no = acc_no
@@ -53,8 +53,8 @@ class Account:
         return print(Account.bank, ':', Account.branch, ':', Account.acc_count)
 
 
-navn = Account(102, 'Naveen', 10000)
-sindu = Account(103, 'Sindhu', 15000)
+navn = Account(102, 'Ram', 10000)
+sindu = Account(103, 'Divyasri', 15000)
 navn.credit(5000)
 navn.debit(12000)
 

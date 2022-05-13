@@ -63,7 +63,7 @@ print(path)
 if os.path.isfile(path):
     tm = Template(open(path).read())
     file = tm.render(profileInfo)
-    doc = open('C:\Users\naveen.kuruva\Desktop\params_upd.py', 'w')
+    doc = open('params_upd.py', 'w')
     succ = doc.write(file)
     # print('hi')
     sys.exit(0)

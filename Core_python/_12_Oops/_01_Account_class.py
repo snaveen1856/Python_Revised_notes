@@ -31,8 +31,8 @@ class Account:
 
 
 '''        
-naveen=Account(10210,'Naveen',5000) 
-naveen.credit(5000)
+Ram=Account(10210,'Ram',5000) 
+Ram.credit(5000)
 smith=Account(10211,'Smith',6000) 
 sai=Account(10212,'Sai',10000) 
 raj=Account(10213,'Raj',7000) 
@@ -41,8 +41,8 @@ john=Account(10215,'John',8000)
 jack=Account(10216,'Jack',9000) 
 vijay=Account(10217,'Vijay',4000) 
 
-#print(type(naveen))
-print(naveen)
+#print(type(Ram))
+print(Ram)
 print(sai)
 print(sam)
 sai.debit(1000)

@@ -8,7 +8,7 @@ print('-------------Slice Operator of string---------------')
 print('Slice of a string:', s[0:5], '\n', s[1:15:2], '\n', s[::-1])
 print('-------------Replication and Concatenation of string---------------')
 print('Repeating of a string:', s * 2)
-print(s + ' Naveen')
+print(s + ' Ram')
 print('-------------Finding a sub_string given string---------------')
 print(s)
 ch = input('Enter a character to find:')
@@ -18,7 +18,7 @@ else:
     print('ch is not in s!')
 
 print('-------------Removing space using strip------------')
-n = '       SNaveen      '
+n = '       SRam      '
 print(n)
 a = n.rstrip()
 print('Right strip :', a)

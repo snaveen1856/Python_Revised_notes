@@ -15,7 +15,7 @@ def palindrome_swapper(string):
         l2 = list()
 
 
-palindrome_swapper('naveen')
+palindrome_swapper('Ram')
 
 """
 2. Run length of string

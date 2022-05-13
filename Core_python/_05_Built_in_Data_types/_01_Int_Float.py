@@ -7,12 +7,12 @@ int ===> default decimal number system in python and different numbers system ar
 0x1589acf  ===> hexadecimal numbers
 float ===> 10.23456789
 complex ===> 18 + 56j
-strings ===> 'Naveen'
+strings ===> 'Ram'
 
 """
 x = 10
 y = 18.56
-z = 'NaveenS'
+z = 'RamS'
 a = 18+56j
 print(x)
 print(y)

@@ -37,7 +37,7 @@ class Hotel:
         print(f"Hotel name:{Hotel.hotel_name}  Net pay:{Hotel.net_pay}")
 
 
-s1 = Hotel(120, 'Sindhu B', 1500)
+s1 = Hotel(120, 'Divyasri B', 1500)
 s1.set_discount()
 print(s1)
 # print(sindu.set_discount())

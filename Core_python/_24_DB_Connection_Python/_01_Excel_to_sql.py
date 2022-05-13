@@ -14,7 +14,7 @@ cursor = con.cursor()
 query = "SELECT * FROM %s;" % table
 cursor.execute(query)
 
-workbook = Workbook('C://Users//naveen.kuruva//Desktop//Book3.xls')
+workbook = Workbook('filename')
 sheet = workbook.add_worksheet()
 for r, row in enumerate(cursor.fetchall()):
     for c, col in enumerate(row):

@@ -8,17 +8,17 @@ from jinja2 import Template
 from kombu import Connection, Exchange, Queue
 
 exchange_item = Exchange("item", "direct", durable=True)
-queue_item = Queue("naveen", exchange=exchange_item, routing_key="naveen")
+queue_item = Queue("Ram", exchange=exchange_item, routing_key="Ram")
 
 
-def process_naveen(body, message):
+def process_Ram(body, message):
     print(body)
     message.ack()
 
 
-with Connection("amqp://naveen:naveen@10.10.1.12//") as conn:
+with Connection("amqp://Ram:Ram@10.10.1.12//") as conn:
     # Consumer
-    with conn.Consumer(queue_item, callbacks=[process_naveen]) as consumer:
+    with conn.Consumer(queue_item, callbacks=[process_Ram]) as consumer:
         # process message and handle events on all channel
 
         while True:
@@ -45,7 +45,7 @@ class GTAProducer:
     def publish(self, ddata):
         try:
             data = ddata
-            with Connection("amqp://naveen:naveen@10.10.1.12//") as conn:
+            with Connection("amqp://Ram:Ram@10.10.1.12//") as conn:
                 producer = conn.Producer(serializer="json")
                 producer.publish(data, exchange=self.exchange_items, routing_key=self.routing_key,
                 declare=[self.queue_items])
@@ -63,7 +63,7 @@ class GTAProducer:
         def publish(self, ddata):
         try:
             data = ddata
-            with Connection("amqp://naveen:naveen@10.10.1.12//") as conn:
+            with Connection("amqp://Ram:Ram@10.10.1.12//") as conn:
             producer = conn.Producer(serializer="json")
             producer.publish(data, exchange=self.exchange_items, routing_key=self.routing_key,
             declare=[self.queue_items])
@@ -114,7 +114,7 @@ class GTAparmsRide:
     def param_overide(self):
         try:
             # data = ddata
-            with Connection("amqp://naveen:naveen@10.10.1.12//") as conn:
+            with Connection("amqp://Ram:Ram@10.10.1.12//") as conn:
                 # Consumer
                 with conn.Consumer(self.queue_items, callbacks=[create_dockerfile]) as consumer:
                     # process message and handle events on all channel

@@ -1,6 +1,6 @@
 """
 import pickle
-d={'Name':'Naveen','Course':'Python','fee':25000}
+d={'Name':'Ram','Course':'Python','fee':25000}
 """
 
 
